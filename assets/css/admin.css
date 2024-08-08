@@ -1,0 +1,253 @@
+.wrap .notice:not(.notice-success) {
+    display: none
+}
+
+.qbp-full-page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.qbp-columns-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.qbp-column-a {
+    flex: 3; /* 75% of the width */
+    box-sizing: border-box;
+}
+
+.qbp-column-b {
+    flex: 1; /* 25% of the width */
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .qbp-columns-2 {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+}
+
+.qbp-title input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.7em;
+}
+
+.qbp-global-pricing-rule-work {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.qbp-global-pricing-rule-work__close {
+    position: absolute;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    background: #faf6f9;
+    color: #814c77;
+    text-align: center;
+    line-height: 24px;
+    right: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.qbp-global-pricing-rule-work__close:hover {
+    background: #f3ddee;
+    cursor: pointer;
+}
+
+.qbp-global-pricing-rule-work__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.qbp-global-pricing-rule-work__steps {
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px
+}
+
+.qbp-global-pricing-rule-work-step--arrow {
+    color: #814c77;
+}
+
+.qbp-global-pricing-rule-work-step__title {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.qbp-global-pricing-rule-work-step__description {
+    margin-top: 10px;
+}
+
+.qbp-global-pricing-rule-work-step__icon,
+.qbp-global-pricing-rule-work-step__icon span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #faf6f9;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: #814c77;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+
+.qbp-global-pricing-rule-form .woocommerce-help-tip {
+    margin-left: 5px;
+}
+
+.qbp-global-pricing-rule-form {
+    margin: 20px 0;
+    display: flex;
+    overflow: hidden;
+    border-radius: 3px;
+    flex-wrap: nowrap;
+}
+
+.qbp-global-pricing-rule-form__tabs {
+    width: 30%;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.qbp-global-pricing-rule-form-tab {
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.qbp-global-pricing-rule-form-tab:first-child {
+    border-top: 1px solid #e8e8e8;
+}
+
+.qbp-global-pricing-rule-form-tab:hover:not(.qbp-global-pricing-rule-form-tab--active) {
+    background: #fbfbfb;
+}
+
+.qbp-global-pricing-rule-form-tab--active {
+    cursor: default;
+    background: #faf6f9;
+}
+
+.qbp-global-pricing-rule-form-tab__icon {
+    transition: all .1s;
+    margin-right: 10px;
+}
+
+.qbp-global-pricing-rule-form-tab--active h3,
+.qbp-global-pricing-rule-form-tab--active div {
+    color: #814c77 !important;
+}
+
+.qbp-global-pricing-rule-form-tab__title h3 {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.qbp-global-pricing-rule-form-tab__title div {
+    margin-top: 5px;
+    color: #777;
+}
+
+.qbp-global-pricing-rule-form-tab-content {
+    display: none;
+}
+
+.qbp-global-pricing-rule-form-tab-content--active {
+    display: block;
+}
+
+.qbp-global-pricing-rule-form__content {
+    width: 70%;
+    background: #fff;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+
+/* tab hint */
+.qbp-global-pricing-rule-hint {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    background: #faf6f9;
+    color: #814c77 !important;
+    margin-bottom: 20px;
+}
+
+.qbp-global-pricing-rule-hint--top-level {
+    margin-top: 10px;
+}
+
+.qbp-global-pricing-rule-hint__icon {
+    margin-right: 10px;
+}
+
+
+
+/* Admin notice */
+#qbp_notice_notice_box.notice_box {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+.notice_box_header {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+.notice-content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#qbp_notice_notice_box h4 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444;
+    font-size: 13px;
+}
+.qbp-global-pricing-notice-list {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.qbp-global-pricing-notice-list li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+
+
