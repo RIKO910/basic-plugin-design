@@ -230,8 +230,15 @@ class Admin {
                             <div id="qbp_notice_notice_box" class="notice_box">
                                 <h2 class="notice_box_header">Publish</h2>
                                 <hr/>
-                                <div class="notice-content">
-                                    fhfhf
+                                <div class="publish-content">
+                                        <label for="status-select">Status:</label>
+                                        <select id="status-select" name="status">
+                                            <option value="drift">Draft</option>
+                                            <option value="pending-review">Pending Review</option>
+                                        </select>
+                                </div>
+                                <div class="publish_button">
+                                    <button class="btn ">Publish</button>
                                 </div>
                             </div>
 

@@ -248,6 +248,43 @@
     color: #555;
 }
 
+.publish-content {
+    padding: 20px 15px 20px 15px; /* top, right, bottom, left */
+}
 
+/* Styling for the publish button container */
+.publish_button {
+    text-align: center; /* Center the button within the container */
+    padding-top: 8px; /* Space above the button */
+    padding-bottom: 8px;
+    background-color: #F6F7F7;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end;
+    padding-right: 20px;
+}
 
+/* Styling for the publish button */
+.publish_button .btn {
+    background-color: #125E96; /* Primary button color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 16px; /* Padding for size */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect for the button */
+.publish_button .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Focus effect for the button */
+.publish_button .btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+}
 
